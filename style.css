@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    display: flex;
+    font-family: 'norsebold';
+    font-size: 120px;
+    margin: 60px 0;
+
+}
+p {
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.fit {
+    
+    height: 100vh; 
+}
+.main {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    
+    
+}
+.left {
+    display: flex;  
+    position: relative;
+    justify-content: center;  
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(255, 255, 255); 
+    align-items: center;
+}
+.right {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.banner {
+    position: absolute;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    background-color: rgb(0 0 0 /40%);
+    width: 100%;
+    justify-content: center;  
+}
+
+.right-top {
+
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px 100px 0px 50px;  
+}
+.right-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 33vh;
+    padding: 0 50px;
+    box-shadow: 0 5px 10px rgba(173, 216, 230, 0.918);
+    width:100%;
+    
+}
+
+.line-one, .line-two, .line-three {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+
+}
+.info {
+    margin-right: 100px;
+}
+
+input:focus {
+    box-shadow: 0 0 4pt 1pt #2560d6;
+    outline-width: 0px;
+    border: blue;
+    
+}
+input {
+    border-radius: 4px;
+    border: solid 1.5px #E5E7EB;
+    margin-top: 4px;
+    height: 20px;
+}
+input:invalid{
+    border:1px solid red ;
+}
+
+.submit {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 50px;
+}
+button.link { 
+    background:none; border:none;
+    color: #596D48; 
+    font-weight: bolder;
+}
+
+button.link:hover{
+    cursor: pointer;
+}
+.createButton {
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 4px;
+    background-color: #596D48;
+    outline-width: 0px;
+    color: white;
+    font-weight:bold;
+    font-size: medium;
+    box-shadow: 1px 1px 5px #596D48;
+    border-color: #596D48;
+    border: none;
+}    
+
+#error {
+    color: red;
+    margin-top: 6px;
+}
